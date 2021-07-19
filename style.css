@@ -34,3 +34,64 @@ body
    font-size: 20px;
    margin-bottom: 10px;
 }
+canvas{
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px aliceblue;
+  margin-bottom: 10px;
+}
+.footer{
+  width: 100%;
+  bottom: 0;
+  background-color: lightsteelblue;
+  line-height: 30px;
+  font-family: monospace;
+  color: dimgray;
+  font-size: 16px;
+  position: fixed;
+}
+.start{
+  display: inline-block;
+  text-decoration: none;
+  width: 15%;
+  font-family: 'Franklin Gothic Medium',sans-serif;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+#restart:hover {
+  color: #111;
+  background: cyan;
+  box-shadow: 0 0 50px cyan;
+  border: none;
+}
+.btn-success:hover {
+  color: #111;
+  background:lawngreen;
+  box-shadow: 0 0 50px lawngreen;
+  border: none;
+}
+.btn-warning:hover {
+  color: #111;
+  background:rgb(214, 236, 10);
+  box-shadow: 0 0 50px rgb(214, 236, 10);
+  border: none;
+}
+.start:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.game_button{
+  position: relative;
+  text-align: center;
+  width: 10%;
+  padding: 10px;
+  font-family: cursive;
+  border-radius: 10px;
+}
+.modal-dialog{
+  width: 45%;
+}
+ol{
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: 600;
+}
