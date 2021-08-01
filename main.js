@@ -1,7 +1,7 @@
 wristR_x = "";
 wristR_y = "";
 score_right = "";
-
+game_status = "";
 /*created by prashant shukla */
 
 var paddle2 =10,paddle1=10;
@@ -23,7 +23,10 @@ var ball = {
     dx:3,
     dy:3
 }
-
+function startGame(){
+  game_status = "start";
+  document.getElementById("game_status").innerHTML = "Game is Loaded !"
+}
 function setup(){
   canvas = createCanvas(900,400);
 	canvas.parent("canvas");
@@ -46,6 +49,7 @@ function got_poses(results){
   }
 }
 function draw(){
+  if(game_status == "start"){
   if(score_right.length > 0.2){
     fill("#ff2a00");
     stroke("#ff2a00");
@@ -90,7 +94,7 @@ function draw(){
     move();
 }
 
-
+}
 
 //function reset when ball does notcame in the contact of padde
 function reset(){
